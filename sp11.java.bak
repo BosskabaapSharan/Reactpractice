@@ -1,0 +1,32 @@
+class sp11 
+{
+	public static void main(String[] args) 
+	{
+		int num=145;
+		int sum=0;
+		int copy=num;
+		while (num!=0)
+		{
+			int d=num%10;
+			sum=sum+(fact(d));
+			num=num/10;
+		}
+		if(copy==sum)
+		{
+				System.out.println("strong num");
+		}
+		else
+		{
+				System.out.println("not a strong num");
+		}
+		static int fact(int x)
+		{
+			int fact=1;
+			for (int i=1; i<+x;i++ )
+			{
+				fact=fact*i;
+			}
+			return fact;
+		}
+	}
+}
